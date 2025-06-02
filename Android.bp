@@ -9198,7 +9198,6 @@ cc_prebuilt_library_shared {
                 "libmdmcutback",
                 "liblog",
                 "libsysutils",
-                "libril",
                 "libc++",
                 "libc",
                 "libm",
@@ -9209,6 +9208,8 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
+    check_elf_files: false,
+
 }
 
 cc_prebuilt_library_shared {
@@ -10269,7 +10270,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "libutils",
-                "libril",
                 "libdiag",
                 "libc++",
                 "libc",
@@ -10278,6 +10278,7 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    check_elf_files: false,
     compile_multilib: "64",
     prefer: true,
     soc_specific: true,
